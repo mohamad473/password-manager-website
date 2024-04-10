@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f8f9;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #161920;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.logo p {
+  font-size: 12px;
+  border-left: 2px solid white;
+  padding-left: 10px;
+}
+
+.menu {
+  margin-right: 20%;
+}
+.menu .item {
+  /* background-color: gray; */
+
+  height: 54px;
+  transition: 0.4s ease-in;
+}
+
+.menu .item:hover {
+  background-color: hsla(0, 71%, 52%, 0.622);
+}
+
+.menu .item:nth-child(2) {
+  box-sizing: border-box;
+  border-bottom: 5px solid hsla(0, 98%, 49%, 0.622);
+}
+
+.menu .item:hover li a,
+.menu .item:hover i {
+  color: white;
+}
+
+.menu .item i {
+  position: relative;
+  top: 18px;
+  left: 38px;
+  color: white;
+  transition: 0.4s ease-in;
+}
+
+.menu .item .fa-plus {
+  left: 28px;
+  top: 17px;
+}
+
+.menu .item .fa-user-group {
+  left: 23px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu ul li {
+  width: 200px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  transition: 0.4s ease-in;
+}
+
+.account {
+  margin-right: 30px;
+  padding-right: 50px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease-in;
+}
+.account:hover {
+  background-color: hsla(0, 71%, 52%, 0.622);
+}
+
+.account:hover .dropdown-list {
+  display: block;
+}
+
+.last-item p {
+  padding-left: 30px;
+}
+
+.fa-chevron-down {
+  position: relative;
+  left: 80px;
+  top: -16px;
+}
+
+.admin-pos {
+  position: relative;
+  right: 45px;
+  top: 17px;
+}
+
+.dropdown-list {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 170px;
+  position: absolute;
+  right: 30px;
+  display: none;
+}
+
+.dropdown-list p a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px 13px;
+  text-align: left;
+}
+
+.content {
+  width: 85vw;
+  margin-inline: auto;
+  margin-top: 35px;
+}
+
+.content .title {
+  margin-bottom: 50px;
+}
+
+.content .title h1 {
+  padding: 20px 15px;
+  border-bottom: 2px solid hsla(0, 71%, 52%, 0.622);
+}
+
+.content .form {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .form form {
+  background: red;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  background-color: #f4f2f2;
+  width: 100%;
+  height: 60vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flow-root;
+  border-radius: 10px;
+}
+
+.wrapper form .row .field {
+  width: 60%;
+  height: 20px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.wrapper {
+  margin-top: 60px;
+}
+
+.content .main-container i {
+  position: relative;
+  left: 290px;
+  top: 50px;
+  font-size: large;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-right: 100px;
+}
+
+.action .row input {
+  width: 100px;
+  height: 40px;
+  margin-left: 40px;
+  background: hsla(0, 76%, 52%, 0.754);
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out;
+}
+
+.action .row input:hover {
+  background-color: #e0dede;
+  color: black;
+}
+
+.error {
+  background: #f2dede;
+  color: #a94442;
+  padding: 10px;
+  width: 85%;
+  border-radius: 5px;
+  margin: 20px auto;
+}
